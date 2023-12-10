@@ -1,3 +1,26 @@
+'''
+Required Components:
+Raspberry Pi - 1
+Power Supply 12 V/2 Amp - 1 
+HDMI Port - 1
+USB Keyboard - 1 
+USB Mouse - 1 
+Micro SD Card - 1 
+LED Module - 1 
+Jumper (F to F) - 2 
+
+Connection:
+Connect Pin no.3 (GPIO 2) to LED1 of LED module 
+Connect Pin no.6 (GND) to GND of LED module
+
+Step 1: Install Telegram Bot on Raspberry Pi.
+•	sudo apt-get update
+•	sudo apt-get upgrade
+•	sudo apt-get install python-pip
+•	sudo pip install telepot
+
+Step 2: Create Telegram Bot and copy the token
+'''
 import time
 import datetime
 import RPi.GPIO as GPIO
