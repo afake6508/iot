@@ -1,3 +1,25 @@
+'''
+Required Components:
+Raspberry Pi - 1
+Power Supply 12 V/2 Amp - 1
+Power Supply with Red & Black extension - 1 
+HDMI Port - 1
+USB Keyboard - 1 
+USBMouse - 1 
+Micro SD Card - 1 
+Ethernet - 1
+RFID Card Reader - 1 
+USB to TTL Converter - 1 
+Jumper (F to F) - 4 
+
+Connection:
+Connect TX of Card Reader to RX of TTL 
+Connect GND of Card Reader to GND of TTL
+Connect Red of Power Supply to VCC of Card Reader 
+Connect Black of Power Supply to GND of Card Reader 
+Connect TTL to Raspberry Pi
+'''
+
 import RPi.GPIO as GP
 import time
 import serial
