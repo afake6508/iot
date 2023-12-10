@@ -12,6 +12,14 @@ RFID Card Reader - 1
 USB to TTL Converter - 1 
 Jumper (F to F) - 4 
 
+Note - If (/dev/ttyUSB0) error occurs run the following commands in the Terminal:
+•	sudo apt-get update
+•	sudo apt-get upgrade
+•	sudo raspi-config (in ‘Interface’ option ‘enable spi’)
+•	sudo reboot (compulsory)
+•	sudo apt-get install python3-dev python3-pip
+•	sudo pip3 install spidev
+
 Connection:
 Connect TX of Card Reader to RX of TTL 
 Connect GND of Card Reader to GND of TTL
