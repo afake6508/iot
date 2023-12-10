@@ -1,9 +1,29 @@
+'''
+Required Components:
+Raspberry Pi - 1
+Power Supply 12 V/2 Amp - 1 
+HDMI Port - 1
+USB Keyboard - 1 
+USB Mouse - 1 
+Micro SD Card - 1 
+LED Module - 1 
+Jumper (F to F) - 2 
+
+Connection:
+Connect Pin no.3 (GPIO 2) to LED1 of LED module 
+Connect Pin no.6 (GND) to GND of LED module
+
+Steps:
+1)	Go to Web browser.
+2)	Type http://webiopi.trouch.com/DOWNLOADS.html & download it.
+3)	Extract the downloaded file.
+'''
 sudo apt – get update 
 sudo apt – get upgrade 
 sudo reboot 
 tar xvzf WebIOPi-0.7.1.tar.gz 
 cd WebIOPi-0.7.1 
-wget https://raw.githubusercontent.com/doublebind/raspi/master/webiopipi2bplus.patch
+wget https://raw.githubusercontent.com/doublebind/raspi/master/webiopi-pi2bplus.patch
 patch -p1 -i webiopi-pi2bplus.patch 
 sudo ./setup.sh 
 sudo reboot 
